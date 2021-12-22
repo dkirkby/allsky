@@ -7,6 +7,18 @@
     <title>AllSky</title>
 </head>
 <body>
-    Hello, world.
+    <div id="observablehq-universe-cab8b347"></div>
+    <div id="observablehq-viewof-options-cab8b347"></div>
+    <p>Credit: <a href="https://observablehq.com/@dkirkby/all-sky-textures">All-Sky Textures by David Kirkby</a></p>
+
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@dkirkby/all-sky-textures.js?v=3";
+    new Runtime().module(define, name => {
+      if (name === "universe") return new Inspector(document.querySelector("#observablehq-universe-cab8b347"));
+      if (name === "viewof options") return new Inspector(document.querySelector("#observablehq-viewof-options-cab8b347"));
+      return ["live"].includes(name);
+    });
+    </script>
 </body>
 </html>
