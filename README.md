@@ -7,4 +7,4 @@ Interactive visualizations of the celestial sphere using different all-sky datas
 
 Try the demo [here](https://dkirkby.github.io/allsky/) and experiment with the mouse / touch controls.
 
-The data sources above are each transformed into an all-sky equirectangular projection then applied as environmental textures in WebGL using the [THREE.js framework](https://threejs.org/).  The unWISE and SFD projections are assembled from about 200 TAN projections using [this notebook](#).
+The data sources above are each transformed into an all-sky equirectangular projection then applied as environmental textures in WebGL using the [THREE.js framework](https://threejs.org/).  The unWISE and SFD projections are assembled from about 200 TAN projections using [this notebook](https://github.com/dkirkby/allsky/blob/main/nb/AllSkyTexture.ipynb).
